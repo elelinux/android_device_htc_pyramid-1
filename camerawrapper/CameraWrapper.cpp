@@ -271,6 +271,10 @@ void camera_release_recording_frame(struct camera_device * device,
     VENDOR_CALL(device, release_recording_frame, opaque);
 }
 
+/*******************************************************************
+ * TODO fix camera autofocus
+ *******************************************************************/
+
 int camera_auto_focus(struct camera_device * device)
 {
     ALOGV("%s", __FUNCTION__);
