@@ -49,7 +49,7 @@ PRODUCT_PACKAGES += \
 
 # Camera
 PRODUCT_PACKAGES += \
-    camera.msm8660 \
+    camera.pyramid \
     libnetcmdiface \
     libsurfaceflinger_client
 
@@ -81,10 +81,6 @@ PRODUCT_PACKAGES += \
     libOmxAacEnc \
     libOmxAmrEnc \
     libstagefrighthw
-
-# GooManager
-PRODUCT_PACKAGES += \
-    GooManager
 
 # Power
 PRODUCT_PACKAGES += \
