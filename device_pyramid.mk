@@ -22,6 +22,12 @@ $(call inherit-product, device/htc/pyramid/msm8660.mk)
 
 DEVICE_PACKAGE_OVERLAYS += device/htc/pyramid/overlay
 
+# Disable OTA
+DISABLE_OTA := true
+
+# Custom Build Name
+TARGET_UNOFFICIAL_BUILD_ID := ELELINUX
+
 # GPS
 PRODUCT_PACKAGES += \
     gps.pyramid

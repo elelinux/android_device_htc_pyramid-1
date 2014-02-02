@@ -34,11 +34,10 @@ BOARD_KERNEL_BASE := 0x48000000
 BOARD_MKBOOTIMG_ARGS := --ramdisk_offset 0x01400000
 BOARD_KERNEL_PAGE_SIZE := 2048
 BUILD_KERNEL := true
-TARGET_KERNEL_CONFIG := senny_defconfig
-TARGET_KERNEL_SOURCE := kernel/htc/pyramid
+TARGET_KERNEL_CONFIG := pyramid_defconfig
+TARGET_KERNEL_SOURCE := kernel/htc/msm8660
 TARGET_SPECIFIC_HEADER_PATH := device/htc/pyramid/include
 BOARD_KERNEL_CMDLINE := console=ttyHSL0 androidboot.hardware=pyramid no_console_suspend=1
-TARGET_LINARO_TOOLCHAIN_DATE := 2014.01
 
 # Board
 TARGET_BOARD_PLATFORM := msm8660
@@ -126,7 +125,6 @@ TARGET_RECOVERY_PIXEL_FORMAT := RGBX_8888
 TW_INCLUDE_DUMLOCK := true
 TW_INCLUDE_JB_CRYPTO := true
 TARGET_RECOVERY_FSTAB := device/htc/pyramid/ramdisk/fstab.pyramid
-USE_SET_METADATA := false
 BOARD_HAS_NO_SELECT_BUTTON := true
 BOARD_USE_CUSTOM_RECOVERY_FONT := \"roboto_15x24.h\"
 BOARD_RECOVERY_SWIPE := true
