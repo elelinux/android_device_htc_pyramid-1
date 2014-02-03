@@ -49,7 +49,7 @@ PRODUCT_PACKAGES += \
 
 # Camera
 PRODUCT_PACKAGES += \
-    camera.pyramid \
+    camera.msm8660 \
     libnetcmdiface \
     libsurfaceflinger_client
 
