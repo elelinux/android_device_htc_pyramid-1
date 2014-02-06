@@ -94,8 +94,9 @@ COMMON_GLOBAL_CFLAGS += -DQCOM_BSP
 
 # Filesystem
 BOARD_VOLD_MAX_PARTITIONS := 36
-BOARD_VOLD_EMMC_SHARES_DEV_MAJOR := true
-TARGET_USE_CUSTOM_LUN_FILE_PATH := /sys/class/android_usb/android0/f_mass_storage/lun0/file
+
+# Misc
+USE_SET_METADATA := false
 
 # GPS
 BOARD_USES_QCOM_GPS := true
@@ -158,9 +159,6 @@ RECOVERY_FSTAB_VERSION := 2
 
 # Use libril in the device tree
 BOARD_USES_LEGACY_RIL := true
-
-# Misc
-COMMON_GLOBAL_CFLAGS += -DHTCLOG
 
 # Power
 TARGET_USES_CM_POWERHAL := true
